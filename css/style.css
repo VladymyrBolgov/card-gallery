@@ -2,6 +2,7 @@
 * {
     box-sizing: border-box;
 }
+
 body {
     font-family: 'Muli', sans-serif;
     overflow: hidden;
@@ -12,12 +13,12 @@ body {
     justify-content: center;
     align-items: center;
 }
-.container {
+.container{
     width: 100%;
     display: flex;
     padding: 0 20px;
 }
-.slide {
+.slide{
     height: 80vh;
     border-radius: 20px;
     margin: 10px;
@@ -30,7 +31,7 @@ body {
     position: relative;
     transition: all 500ms ease-in-out;
 }
-.slide h3 {
+.slide h3{
     position: absolute;
     font-size: 24px;
     bottom: 20px;
@@ -38,10 +39,12 @@ body {
     margin: 0;
     opacity: 0;
 }
-.slide.active {
-    flex: 10;
+
+.slide.active{
+   flex: 10; 
 }
-.slide.active h3 {
+
+.slide.active h3{
     opacity: 1;
     transition: opacity 0.3s ease-in 0.4s;
 }
